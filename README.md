@@ -1,7 +1,6 @@
 # Sinkhorn: weich statt scharf – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-sinkhorn-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-sinkhorn-demo.streamlit.app/)**
 
 Demo der Reihe **optimaler-transport** („Optimaler Transport: Verteilungen ineinander verschieben“) in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“. Sie setzt an der Annahme an, die die Wurzel der Reihe („Vom Zuordnen zum Transportieren“) stehen lässt: *Der optimale Plan ist eine dünne Ecke des LP (höchstens n + m − 1 Einträge), und bei Gleichstand wählt der Löser eine.* Hier wird der Plan **weich**: dicht, eindeutig und glatt von den Kosten abhängig. Vehikel ist wieder der Ort: **Lager** mit Angeboten, **Kunden** mit Nachfragen, Kosten je Einheit. Gerechnet wird mit der **Sinkhorn-Iteration** in der Log-Domäne (`snk_sinkhorn.py`), dem Newton-Verfahren auf dem Dual für sehr kleines ε (`snk_newton.py`) und dem eigenen Transportsimplex für das LP-Optimum (`snk_simplex.py`, eine Kopie aus der Wurzel-Demo); alles nur numpy.
 
